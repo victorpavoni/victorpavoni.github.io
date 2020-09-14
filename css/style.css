@@ -1,0 +1,432 @@
+
+/*.wpp img{
+    width: 150px;
+    cursor: pointer;
+    position: fixed;
+    bottom: -10px;
+    left: -10px;
+    z-index: 999;
+}*/
+/* Header */
+
+header {
+    width: 100%;
+    background: #111;
+    border-bottom: 3px solid #e5e5e5;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 27px;
+    transition: 0.8s;
+}
+header .logo a:hover {
+    text-shadow: 0px 0px 10px #fff;
+}
+header .logo {
+    padding: 18px 10px;
+}
+header nav.menu-mobile {
+    display: none;
+}
+header nav.menu-mobile ul {
+    position: absolute;
+    top: 69px;
+    width: 100%;
+    background: #111111;
+    border-bottom: 3px solid #e5e5e5;
+    display: none;
+}
+header nav.menu-mobile ul li {
+    text-align: center;
+}
+header nav.menu-mobile ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 0;
+    display: block;
+    transition: 0.8s;
+    border-bottom: 1px solid black;
+}
+header nav.menu-mobile ul li a:hover {
+    background: #222222;
+}
+header nav.menu-mobile .menu-btn {
+    font-size: 24px;
+    padding: 20px;
+}
+header nav.menu-mobile .menu-btn i {
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+header nav.menu-mobile .menu-btn i:hover {
+    text-shadow: 0px 0px 10px #fff;
+}
+header nav.menu-desktop ul {
+    padding: 25px 0;
+}
+header nav.menu-desktop ul li{
+    float: left;
+    padding: 0 30px;
+    list-style: none;
+}
+header nav.menu-desktop ul li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 200;
+    transition: 0.4s ease-in-out;
+}
+header nav.menu-desktop ul li a:hover {
+    text-shadow: 0px 0px 10px #fff;
+}
+header > .container {
+    position: relative;
+    z-index: 999;
+}
+
+/* *** */
+
+/* BG - Banner */
+section.bg-banner {
+    width: 100%;
+    height: 90vh;
+    min-height: 700px;
+    background-image: url('../images/home-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+}
+section.bg-banner .overlay {
+    width: 100%;
+    height: 90vh;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 0;
+}
+section.bg-banner .bg-content {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+section.bg-banner .bg-content h2 {
+    font-weight: 200;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+section.bg-banner .bg-content input {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+/* *** */
+
+/* Sobre */
+section.sobre a.btn-contact {
+    margin-bottom: 90px;
+}
+section.sobre {
+    text-align: center;
+    background-color: #111111;
+}
+section.sobre > h2 {
+    color: white;
+    font-size: 40px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+section.sobre .box-container {
+    position: relative;
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+section.sobre .box-single {
+    background-color: #001112;
+    box-shadow: 0px 0px 10px red;
+    color: red;
+    padding: 10px 0;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
+    max-width: 380px;
+}
+section.sobre .box-single:hover {   
+    box-shadow: 0px 0px 20px red;
+}
+section.sobre .box-single h2 {
+    padding: 10px 5px;
+    font-size: 30px;
+    font-weight: normal;
+}
+section.sobre .box-single p {
+    font-size: 28px;
+    font-weight: lighter;
+    padding: 20px 20px;
+}
+.wave {
+    background-image: url('../images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    border: 0; 
+}
+/* *** */
+/* Projetos */
+section.projetos {
+    margin: 100px 0;
+}
+section.projetos > .container {
+    position: relative;
+}
+section.projetos > h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400; 
+}
+section.projetos .row-project{
+    margin: 70px 0;
+}
+.wave-1 {
+    background-image: url('../images/wave1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%
+}
+/* *** */
+/* Contato */
+
+section.contato {
+    background: #111;
+    padding: 80px 0;
+}
+section.contato h2 {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400; 
+    padding: 40px 0;
+}
+section.contato form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 70px 0;
+    text-align: center;
+}
+
+section.contato form input[type=text], section.contato form input[type=email], section.contato form input[type=tel] {
+    padding-left: 20px;
+    background-color: #222;
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+    color: red;
+    height: 40px;
+    transition: 0.8s;
+    width: 100%;
+    margin: 10px 0;
+}
+section.contato form input[type=text]:focus,
+section.contato form input[type=email]:focus,
+section.contato form input[type=tel]:focus {
+    box-shadow: 0px 0px 15px red;
+    outline: 0;
+}
+section.contato textarea {
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #222;
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px red;
+    color: red;
+    width: 100%;
+    height: 140px;
+    transition: 0.8s;
+    margin: 10px 0;
+    resize: none;
+}
+section.contato textarea:focus {
+    box-shadow: 0px 0px 15px red;
+    outline: 0;
+}
+section.contato form label {
+    color: red;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+section.contato form input[type=email], section.contato form input[type=text] {
+    width: 48%;
+}
+section.contato form input[type=text] {
+    float: left;
+}
+section.contato form input[type=email] {
+    float: right;
+}
+section.contato .icon-input {
+    margin: 20px 0;
+    position: relative;
+}
+/* *** */
+
+/* Footer */
+
+footer {
+    padding: 30px 0;
+    box-shadow: 0px 0px 40px red;
+}
+footer p {
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+footer .menu-links {
+    display: flex;
+    font-size: 30px;
+}
+footer .menu-links a {
+    color: red;
+    margin: 0 20px;
+    border: 3px solid red;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    padding: 5px 10px;
+}
+footer .menu-links a:hover {
+    box-shadow: 0px 0px 10px red;
+}
+/* *** */
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    section.sobre .box-single {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    section.sobre .box-single {
+        width: 100%;
+        display: block;
+        max-width: 500px;
+        margin: 50px auto;
+    }
+    .row-project a {
+        float: none;
+    }
+    .row-project img {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+    }
+    section.sobre .box-single:first-child {
+        margin: 0 auto;
+    }
+    section.sobre .box-container {
+        display: block;
+    }
+}
+@media screen and (max-width: 650px) {
+    header nav.menu-desktop {
+        display: none;
+    }
+    header nav.menu-mobile {
+        display: block;
+    }
+    section.bg-banner .bg-content h2 {
+        font-size: 30px;
+    }
+    section.bg-banner .bg-content input {
+        font-size: 50px;
+    }
+
+
+    footer {
+        padding: 30px 0;
+        text-align: center;
+        box-shadow: 0px 0px 40px red;
+    }
+    footer p {
+        color: white;
+        padding-top: 15px;
+        padding-left: 0;
+        float: none !important;
+    }
+    footer .menu-links {
+        display: flex;
+        float: none !important;
+        font-size: 20px;
+        width: 100%;
+        margin: 50px 0;
+        justify-content: center;
+    }
+    footer .menu-links a {
+        color: red;
+        margin: 0 10px;
+        border: 3px solid red;
+        border-radius: 50%;
+        padding: 5px 10px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    section.bg-banner .bg-content h2 {
+        font-size: 30px;
+    }
+    section.bg-banner .bg-content input {
+        font-size: 40px;
+    }
+    section.sobre .box-container {
+        padding: 70px 15px;
+    }
+    section.contato form {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px 70px 10px;
+        text-align: center;
+    }
+    section.contato form a, section.contato form input {
+        float: none;
+
+    }
+    section.contato form input {
+        display: block;
+        margin: 30px auto;
+    }
+}
+@media screen and (max-width: 380px) {
+    section.bg-banner .bg-content input {
+        font-size: 30px;
+    }
+    .row-project img {
+        display: block;
+        width: 90%;
+        max-width: 400px;
+        margin: 50px 20px;
+    }
+}
