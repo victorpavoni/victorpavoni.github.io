@@ -223,6 +223,7 @@ section.projetos .row-project{
 section.contato {
     background: #111;
     padding: 80px 0;
+    text-align: center;
 }
 section.contato h2 {
     color: red;
